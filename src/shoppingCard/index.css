@@ -1,0 +1,71 @@
+.my-container {
+    padding: 0 100px 0 100px;
+}
+
+.my-container-header {
+    padding: 0 220px 0 220px;
+}
+
+.header .info {
+    align-items: center;
+}
+
+.header .phone_number {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    background-color: #f2dfbc;
+    padding: 10px;
+    height: 2em;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.wrap-notif {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    padding: 4px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #fff;
+}
+
+.my-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #bae9ea;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.navbar li {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.location {
+    background-color: #f7f7f7;
+}
+
+.location .item p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.location .item p:first-child {
+    font-weight: 700;
+}
