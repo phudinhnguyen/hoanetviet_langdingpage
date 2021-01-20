@@ -50,7 +50,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.15em;
+    font-size: .8em;
     color: #fff;
 }
 
@@ -200,6 +200,11 @@ section.content .step:hover .number{
     font-weight: 700;
 }
 
+label{
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 1024px) {
     body {
       font-size: 14px;
@@ -256,7 +261,9 @@ section.content .step:hover .number{
     .discount .content{
         font-size: 1.5em;
     }
-    
+    .table{
+        font-size: 9px;
+    }
     .my-container-header {
         padding: 1em 1em 1em 1em;
     }
