@@ -533,6 +533,19 @@ label {
     background-color: #bae9e9;
 }
 
+#mySidebar-list a {
+    padding-left: 1em;
+    font-weight: 600 !important;
+}
+
 .w3-sidebar {
     width: 70% !important;
+    font-size: 15px;
+    background-color: #bae9e9 !important;
+}
+
+.w3-sidebar button {
+    font-size: 1.5em !important;
+    font-weight: 700;
+    background-color: #bae9e9;
 }

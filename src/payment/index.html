@@ -8,32 +8,55 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+        <div class="" id="mySidebar-list">
+            <a href="#menu1" class="active">Lan hồ điệp</a>
+            <a href="#menu2" class="active">Hoa sinh nhật</a>
+            <a href="#menu3" class="active">Hoa khai trương</a>
+            <a href="#menu4" class="active">Hoa chia buồn</a>
+            <a href="#menu5" class="active">Dịp tặng hoa</a>
+            <a href="#menu6" class="active">Kiểu dáng hoa</a>
+            <a href="#menu7" class="active">Loại hoa tươi</a>
+            <a href="#menu8" class="active">Hoa cưới</a>
+            <a href="#menu9" class="active">Trái cây</a>
+            <a href="#menu10" class="active">Quà tặng</a>
+        </div>
+    </div>
     <section class="header my-container d-flex justify-content-between">
+        <span class="d-375-show" style="display: flex;align-items: center;font-size: 1.6em;"
+            onclick="w3_open()">☰</span>
         <div class="info d-flex align-content-center">
             <img src="../../image/Logo.png" alt="logo">
-            <span class="phone_number text-center">
-                <i class="fas fa-phone-volume mx-2"></i> 0932159106-0934823469 </span>
+            <span class="phone_number text-center d-375-none"><i class="fas fa-phone-volume mx-2"></i>
+                0932159106-0934823469 </span>
         </div>
+        </span>
         <div class="action d-flex">
-            <span class="my-align-center" style="font-weight: 700;margin-right: 1em;">Kiểm tra đơn hàng</span>
-            <span class="my-align-center" style="font-weight: 700; margin-right: 1em;">Đặt hoa nhanh</span>
-            <div class="my-align-center" style="margin-right: 1em;">
+            <span class="my-align-center d-375-none" style="font-weight: 700;margin-right: 1em;">Kiểm tra đơn
+                hàng</span>
+            <span class="my-align-center d-375-none" style="font-weight: 700; margin-right: 1em;">Đặt hoa nhanh</span>
+            <div class="my-align-center d-375-none" style="margin-right: 1em;">
                 <i class="far fa-user"></i>
             </div>
-            <div class="my-align-center" style="margin-right: 1em;">
+            <div class="my-align-center" style="margin-right: .5em;">
                 <i class="fas fa-search"></i>
             </div>
-            <div class="my-align-center" style="margin-right: 1em">
+            <div class="my-align-center" style="margin-right: .5em">
                 <i class="fas fa-shopping-bag" style="position: relative;">
-                    <span class="notification">+9</span>
+                    <span class="notification d-375-none">+9</span>
                 </i>
             </div>
         </div>
     </section>
+    <span class="phone_number d-375-show text-center d-768-show"><i class="fas fa-phone-volume mx-2"></i>
+        0932159106-0934823469 </span>
     <div class="topnav" id="myTopnav">
         <a href="#menu1" class="active">Lan hồ điệp</a>
         <a href="#menu2" class="active">Hoa sinh nhật</a>
@@ -45,11 +68,11 @@
         <a href="#menu8" class="active">Hoa cưới</a>
         <a href="#menu9" class="active">Trái cây</a>
         <a href="#menu10" class="active">Quà tặng</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-        </a>
+        </a> -->
     </div>
-    <section class="location py-3 my-container-header d-flex justify-content-between">
+    <section class="location d-375-none py-3 my-container-header d-flex justify-content-between">
         <div class="item my-align-center">
             <i class="fas fa-map-marker-alt" style="font-size: 3.5em;margin-right: .15em;"></i>
             <div>
@@ -295,6 +318,32 @@
             var listItem = document.getElementsByClassName('item-table')
             console.log('listItem: ', listItem);
             listItem[0].remove()
+        }
+        const plus = document.getElementsByClassName('plus-button')
+        for (let index = 0; index < plus.length; index++) {
+            const element = plus[index];
+            element.addEventListener('click', (e) => {
+                let currentValue = e.target.previousElementSibling.innerHTML
+                e.target.previousElementSibling.innerHTML = +currentValue + 1
+            }, false)
+        }
+        const minus = document.getElementsByClassName('minus-button')
+        for (let index = 0; index < minus.length; index++) {
+            const element = minus[index];
+            element.addEventListener('click', (e) => {
+                let currentValue = e.target.nextElementSibling.innerHTML
+                if (+currentValue - 1 >= 0) {
+                    e.target.nextElementSibling.innerHTML = +currentValue - 1
+                }
+            }, false)
+        }
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
 </body>

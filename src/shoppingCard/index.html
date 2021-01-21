@@ -14,7 +14,7 @@
 
 <body>
     <!-- Sidebar -->
-    <div class="w3-sidebar d-375-show w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
         <div class="" id="mySidebar-list">
             <a href="#menu1" class="active">Lan hồ điệp</a>
@@ -30,7 +30,8 @@
         </div>
     </div>
     <section class="header my-container d-flex justify-content-between">
-        <span class="" style="display: flex;align-items: center;font-size: 1.6em;" onclick="w3_open()">☰</span>
+        <span class="d-375-show" style="display: flex;align-items: center;font-size: 1.6em;"
+            onclick="w3_open()">☰</span>
         <div class="info d-flex align-content-center">
             <img src="../../image/Logo.png" alt="logo">
             <span class="phone_number text-center d-375-none"><i class="fas fa-phone-volume mx-2"></i>
@@ -54,8 +55,8 @@
             </div>
         </div>
     </section>
-    <span class="phone_number text-center d-768-show"><i class="fas fa-phone-volume mx-2"></i> 0932159106-0934823469
-    </span>
+    <span class="phone_number d-375-show text-center d-768-show"><i class="fas fa-phone-volume mx-2"></i>
+        0932159106-0934823469 </span>
     <div class="topnav" id="myTopnav">
         <a href="#menu1" class="active">Lan hồ điệp</a>
         <a href="#menu2" class="active">Hoa sinh nhật</a>
