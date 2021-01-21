@@ -1,4 +1,4 @@
-body{
+body {
     font-size: 16px;
 }
 
@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 
-.header .info img{
+.header .info img {
     width: 10em;
 }
 
@@ -66,6 +66,7 @@ body{
     font-size: .8em;
     text-decoration: none;
 }
+
 /* ============location=============== */
 .location {
     margin-bottom: 5em;
@@ -83,8 +84,9 @@ body{
 .location .item p:first-child {
     font-weight: 700;
 }
+
 /* ============ad=============== */
-.ad{
+.ad {
     padding: 0 2em 0 2em;
     align-items: center;
     position: absolute;
@@ -97,26 +99,26 @@ body{
     transform: translate(-50%, 50%);
 }
 
-.wish .christmas{
+.wish .christmas {
     color: yellow;
     letter-spacing: .3em;
     font-size: 1.5em;
 }
 
-.wish .merry{
+.wish .merry {
     display: flex;
     align-items: flex-end;
     transform: translateY(.3em);
     font-size: 1.3em;
 }
 
-.wish .happynewyear{
+.wish .happynewyear {
     font-size: .4em;
     display: flex;
     align-items: flex-end;
 }
 
-.discount{
+.discount {
     width: 60%;
     display: flex;
     align-items: center;
@@ -133,7 +135,7 @@ body{
     font-size: 2em;
 }
 
-.button{
+.button {
     height: 2em;
     background-color: #fff;
     color: #343434;
@@ -143,12 +145,12 @@ body{
     cursor: pointer;
 }
 
-.breadcum .item{
+.breadcum .item {
     color: #429799
 }
 
 /* ============step=============== */
-section.content .step .number{
+section.content .step .number {
     width: 2em;
     height: 2em;
     margin-right: .5em;
@@ -162,25 +164,25 @@ section.content .step .number{
     font-weight: 800;
 }
 
-section.content .step:hover .number{
+section.content .step:hover .number {
     background-color: #bae9ea;
 }
 
-.list-step{
+.list-step {
     margin: 2em;
 }
 
-.table{
+.table {
     border: .1px solid #e5e5e5;
     margin: 0;
 }
 
-.table img{
+.table img {
     width: 3.5em;
     height: 3.5em;
 }
 
-.table-footer{
+.table-footer {
     padding: 1.5em;
     display: flex;
     justify-content: flex-end;
@@ -195,69 +197,83 @@ section.content .step:hover .number{
     padding-bottom: 3em;
 }
 
-.footer .title{
+.footer .title {
     margin-bottom: 1.5em;
     font-weight: 700;
 }
 
 @media screen and (max-width: 1024px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
-    .commitment{
+
+    .commitment {
         padding: 2em !important;
     }
+
     .my-container {
         padding: 1em 1em 1em 1em;
     }
-    
+
     .my-container-header {
         padding: 1em 2em 1em 2em;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-      font-size: 10px;
+        font-size: 10px;
     }
+
     .location {
         margin-bottom: 3em;
-    }   
-    section.my-container.breadcum{
+    }
+
+    section.my-container.breadcum {
         font-size: 16px;
         padding: .5em;
-    } 
+    }
+
     .my-container {
         padding: 1em 1em 1em 1em;
     }
-    .ad{
+
+    .location {
+        font-size: 14px;
+    }
+
+    .ad {
         width: 95%;
     }
+
     .my-container-header {
         padding: 1em 2em 1em 2em;
     }
 
-    .footer .item .title{
+    .footer .item .title {
         font-size: 1em;
         margin-bottom: .8em;
     }
-  }
+}
 
-  @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
     body {
-      font-size: 6px;
+        font-size: 6px;
     }
+
     .my-container {
         padding: 1em 1em 1em 1em;
     }
-    .ad{
+
+    .ad {
         width: 100%;
     }
-    .discount .content{
+
+    .discount .content {
         font-size: 1.5em;
     }
-    
+
     .my-container-header {
         padding: 1em 1em 1em 1em;
     }
-  }
+}

@@ -7,57 +7,97 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section class="header my-container py-3 d-flex justify-content-between">
+    <!-- Sidebar -->
+    <div class="w3-sidebar d-375-show w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+        <div class="" id="mySidebar-list">
+            <a href="#menu1" class="active">Lan hồ điệp</a>
+            <a href="#menu2" class="active">Hoa sinh nhật</a>
+            <a href="#menu3" class="active">Hoa khai trương</a>
+            <a href="#menu4" class="active">Hoa chia buồn</a>
+            <a href="#menu5" class="active">Dịp tặng hoa</a>
+            <a href="#menu6" class="active">Kiểu dáng hoa</a>
+            <a href="#menu7" class="active">Loại hoa tươi</a>
+            <a href="#menu8" class="active">Hoa cưới</a>
+            <a href="#menu9" class="active">Trái cây</a>
+            <a href="#menu10" class="active">Quà tặng</a>
+        </div>
+    </div>
+    <section class="header my-container d-flex justify-content-between">
+        <span class="" style="display: flex;align-items: center;font-size: 1.6em;" onclick="w3_open()">☰</span>
         <div class="info d-flex align-content-center">
             <img src="../../image/Logo.png" alt="logo">
-            <span class="phone_number text-center"> 0932159106-0934823469 </span>
+            <span class="phone_number text-center d-375-none"><i class="fas fa-phone-volume mx-2"></i>
+                0932159106-0934823469 </span>
         </div>
+        </span>
         <div class="action d-flex">
-            <span class="my-align-center" style="font-weight: 700;margin-right: 1em;">Kiểm tra đơn hàng</span>
-            <span class="my-align-center" style="font-weight: 700; margin-right: 1em;">Đặt hoa nhanh</span>
-            <div class="my-align-center" style="margin-right: 1em;">
+            <span class="my-align-center d-375-none" style="font-weight: 700;margin-right: 1em;">Kiểm tra đơn
+                hàng</span>
+            <span class="my-align-center d-375-none" style="font-weight: 700; margin-right: 1em;">Đặt hoa nhanh</span>
+            <div class="my-align-center d-375-none" style="margin-right: 1em;">
                 <i class="far fa-user"></i>
             </div>
-            <div class="wrap-notif">
-                <span class="notification">9+</span>
+            <div class="my-align-center" style="margin-right: .5em;">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="my-align-center" style="margin-right: .5em">
+                <i class="fas fa-shopping-bag" style="position: relative;">
+                    <span class="notification d-375-none">+9</span>
+                </i>
             </div>
         </div>
     </section>
-    <section class="navbar my-container-header py-3 d-flex">
-        <span>Lan hồ điệp</span>
-        <span>Hoa sinh nhật</span>
-        <span>Hoa khai trương</span>
-        <span>Hoa chia buồn</span>
-        <span>Dịp tặng hoa</span>
-        <span>Kiểu dáng hoa</span>
-        <span>Loại hoa tươi</span>
-        <span>Hoa cưới</span>
-        <span>Trái cây</span>
-        <span>Quà tặng</span>
-    </section>
-    <section class="location py-3 my-container-header d-flex justify-content-between">
-        <div class="item">
-            <p> Hà Nội: </p>
-            <p> Điện thoại: 024.73007.008 - 093.4647.172 </p>
-            <p> Địa chỉ: Số 63/445 Lạc Long Quân, Tây Hồ, Hà Nội </p>
-            <p> Email: hn@dienhoa24gio.com@1X.png </p>
+    <span class="phone_number text-center d-768-show"><i class="fas fa-phone-volume mx-2"></i> 0932159106-0934823469
+    </span>
+    <div class="topnav" id="myTopnav">
+        <a href="#menu1" class="active">Lan hồ điệp</a>
+        <a href="#menu2" class="active">Hoa sinh nhật</a>
+        <a href="#menu3" class="active">Hoa khai trương</a>
+        <a href="#menu4" class="active">Hoa chia buồn</a>
+        <a href="#menu5" class="active">Dịp tặng hoa</a>
+        <a href="#menu6" class="active">Kiểu dáng hoa</a>
+        <a href="#menu7" class="active">Loại hoa tươi</a>
+        <a href="#menu8" class="active">Hoa cưới</a>
+        <a href="#menu9" class="active">Trái cây</a>
+        <a href="#menu10" class="active">Quà tặng</a>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> -->
+    </div>
+    <section class="location d-375-none py-3 my-container-header d-flex justify-content-between">
+        <div class="item my-align-center">
+            <i class="fas fa-map-marker-alt" style="font-size: 3.5em;margin-right: .15em;"></i>
+            <div>
+                <p> Hà Nội: </p>
+                <p> Điện thoại: 024.73007.008 - 093.4647.172 </p>
+                <p> Địa chỉ: Số 63/445 Lạc Long Quân, Tây Hồ, Hà Nội </p>
+                <p> Email: hn@dienhoa24gio.com</p>
+            </div>
         </div>
-        <div class="item">
-            <p>TP.Hồ Chí Minh:</p>
-            <p>Điện thoại: 028.73007.008 - 094.7723.444 </p>
-            <p>Địa chỉ: 189 Xô Viết Nghệ Tĩnh, P.17, Q. Bình Thạnh</p>
-            <p>Email: hcm@dienhoa24gio.com@1X.png</p>
+        <div class="item my-align-center">
+            <i class="fas fa-map-marker-alt" style="font-size: 3.5em;margin-right: .15em;"></i>
+            <div>
+                <p>TP.Hồ Chí Minh:</p>
+                <p>Điện thoại: 028.73007.008 - 094.7723.444 </p>
+                <p>Địa chỉ: 189 Xô Viết Nghệ Tĩnh, P.17, Q. Bình Thạnh</p>
+                <p>Email: hcm@dienhoa24gio.com</p>
+            </div>
         </div>
-        <div class="item">
-            <p>Đà Nẵng:</p>
-            <p>Điện thoại: 028.73007.008 - 094.7723.444 </p>
-            <p>Địa chỉ: 189 Xô Viết Nghệ Tĩnh, P.17, Q. Bình</p>
-            <p>Thạnh Email: hcm@dienhoa24gio.com@1X.png</p>
+        <div class="item my-align-center">
+            <i class="fas fa-map-marker-alt" style="font-size: 3.5em;margin-right: .15em;"></i>
+            <div>
+                <p>Đà Nẵng:</p>
+                <p>Điện thoại: 028.73007.008 - 094.7723.444 </p>
+                <p>Địa chỉ: 189 Xô Viết Nghệ Tĩnh, P.17, Q. Bình</p>
+                <p>Thạnh Email: hcm@dienhoa24gio.com</p>
+            </div>
         </div>
         <div class="ad d-flex justify-content-between">
             <div class="wish">
@@ -65,9 +105,7 @@
                     <span class="merry">MERRY</span>
                     <span class="happynewyear">& HAPPY NEW YEAR</span>
                 </div>
-                <span class="christmas">
-                    CHRISTMAS
-                </span>
+                <span class="christmas"> CHRISTMAS </span>
             </div>
             <div class="discount">
                 <img src="../../image/circle.png" alt="circle">
@@ -82,13 +120,13 @@
         <span class="item">Giỏ hoa tươi</span>
     </section>
     <section class="content my-container">
-        <h2 class="title" style="margin: 1em 0 1em 0; font-size: 2em;">
-            Giỏ hàng
-        </h2>
+        <h2 class="title" style="margin: 1em 0 1em 0; font-size: 2em;"> Giỏ hàng </h2>
         <div class="list-step d-flex justify-content-between">
             <span class="step d-flex my-align-center">
-                <div class="number">1</div>
-                <span class="label">Chọn sản phẩm</span>
+                <div class="number active">
+                    <i class="fas fa-check" style="color: #FFFFFF;"></i>
+                </div>
+                <span class="label active">Chọn sản phẩm</span>
             </span>
             <span class="step d-flex my-align-center">
                 <div class="number">2</div>
@@ -107,76 +145,84 @@
                 <span class="label">Thanh toán</span>
             </span>
         </div>
-
-        <table class="table">
+        <table class="table" id="table">
             <tr style="background-color: #bae9e9;">
                 <th>Hình ảnh</th>
                 <th>Mã sản phẩm</th>
                 <th>Tên sản phẩm</th>
                 <th>Đơn gía</th>
-                <th>Số lượng</th>
+                <th class="text-center">Số lượng</th>
                 <th>Thành tiền</th>
                 <th><span /></th>
             </tr>
-            <tr>
+            <tr class="item-table">
                 <th><img src="../../image/3381256ac72d2cd5c76af2bf7be62f93.png" alt=""></th>
                 <th>HB-001</th>
                 <th>Hoa chúc mừng sinh nhật</th>
                 <th>300.000</th>
-                <th>
-                    <span class="p-2 " style="border: 1px solid gray;">01</span>
+                <th class="text-center">
+                    <span class="total  d-flex align-center"
+                        style="border: 1px solid rgb(218, 218, 218); padding: .3em;">
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-minus-circle minus-button"></i>
+                        <span class="number mx-2">1</span>
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-plus-circle plus-button"></i>
+                    </span>
                 </th>
                 <th>300.000 Đ</th>
                 <th class="d-flex">
                     <i class="far fa-edit"></i>
                     <div class="mr-3"></div>
-                    <i class="far fa-trash-alt"></i>
+                    <i onclick="remove()" class="far fa-trash-alt"></i>
                 </th>
             </tr>
-            <tr>
+            <tr class="item-table">
                 <th><img src="../../image/3381256ac72d2cd5c76af2bf7be62f93.png" alt=""></th>
                 <th>HB-001</th>
                 <th>Hoa chúc mừng sinh nhật</th>
                 <th>300.000</th>
-                <th>
-                    <span class="p-2 " style="border: 1px solid gray;">01</span>
+                <th class="text-center">
+                    <span class="total  d-flex align-center"
+                        style="border: 1px solid rgb(218, 218, 218); padding: .3em;">
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-minus-circle minus-button"></i>
+                        <span class="number mx-2">1</span>
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-plus-circle plus-button"></i>
+                    </span>
                 </th>
                 <th>300.000 Đ</th>
                 <th class="d-flex">
                     <i class="far fa-edit"></i>
                     <div class="mr-3"></div>
-                    <i class="far fa-trash-alt"></i>
+                    <i onclick="remove()" class="far fa-trash-alt"></i>
                 </th>
             </tr>
-            <tr>
+            <tr class="item-table">
                 <th><img src="../../image/3381256ac72d2cd5c76af2bf7be62f93.png" alt=""></th>
                 <th>HB-001</th>
                 <th>Hoa chúc mừng sinh nhật</th>
                 <th>300.000</th>
-                <th>
-                    <span class="p-2 " style="border: 1px solid gray;">01</span>
+                <th class="text-center">
+                    <span class="total  d-flex align-center"
+                        style="border: 1px solid rgb(218, 218, 218); padding: .3em;">
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-minus-circle minus-button"></i>
+                        <span class="number mx-2">1</span>
+                        <i style="color: #bae9e9; cursor: pointer; font-size: 1.2em;"
+                            class="fas fa-plus-circle plus-button"></i>
+                    </span>
                 </th>
                 <th>300.000 Đ</th>
                 <th class="d-flex">
                     <i class="far fa-edit"></i>
                     <div class="mr-3"></div>
-                    <i class="far fa-trash-alt"></i>
+                    <i onclick="remove()" class="far fa-trash-alt"></i>
                 </th>
             </tr>
         </table>
         <div class="table-footer" style="background-color: #f8ead1;">
-            <!-- <div class="d-flex justify-content-between" style="width: 20em;">
-                <span>Tổng tiền sản phẩm</span>
-                <span style="font-weight: 700; margin-right: 3em;">900.000 Đ</span>
-            </div>
-            <div class="d-flex justify-content-between" style="width: 20em;">
-                <span>Số tiền ưu đãi</span>
-                <span style="font-weight: 700;">0 Đ</span>
-            </div>
-            <div class="d-flex justify-content-between" style="width: 20em;">
-                <span>Tổng tiền đơn hàng</span>
-                <span style="font-weight: 700;">900.000 Đ</span>
-            </div> -->
             <div class="left mr-5">
                 <div>Tổng tiền sản phẩm</div>
                 <div>Số tiền ưu đãi</div>
@@ -194,27 +240,40 @@
             <div class="button px-2" style="margin-right: 1em;">Tiếp tục mua hàng</div>
             <div class="button px-2">Tiếp tục</div>
         </div>
-        <span class="d-flex justify-content-end">miễn phí giao ở nội thành</span>
+        <span class="d-flex justify-content-end"> <i class="fas fa-shipping-fast mr-2" style="font-size: 1.5em;"></i>
+            miễn phí giao ở nội thành</span>
     </div>
-
     <footer>
         <div class="commitment d-flex justify-content-between"
             style="background-color: #f8ead1;font-size: .9em;padding: 3em 10em 3em 10em;">
-            <div class="item">
-                <div>Miễn phí giao hoa</div>
-                <div style="font-weight: 800;">Tới nội thành 63 tỉnh và 150 quốc</div>
+            <div class="item my-align-center">
+                <i class="fas fa-shipping-fast mr-2" style="font-size: 2.5em;"></i>
+                <div>
+                    <div>Miễn phí giao hoa</div>
+                    <div style="font-weight: 800;">Tới nội thành 63 tỉnh và 150 quốc</div>
+                </div>
             </div>
-            <div class="item">
-                <div>Cam kết dịch vụ</div>
-                <div style="font-weight: 800;">Cam kết hoa tươi hơn 3 ngày</div>
+            <div class="item my-align-center">
+                <i class="fas fa-user-check mr-2" style="font-size: 2.5em;"></i>
+                <div>
+                    <div>Cam kết dịch vụ</div>
+                    <div style="font-weight: 800;">Cam kết hoa tươi hơn 3 ngày</div>
+                </div>
             </div>
-            <div class="item">
-                <div>Mẫu hoa đa dạng</div>
-                <div style="font-weight: 800;">Hàng trăm mẫu hoa theo yêu</div>
+            <div class="item my-align-center">
+                <span class="mr-2"
+                    style="font-size: 2.5em; border: 2px solid rgb(66, 66, 66); width: .5em; height: .8em;"></span>
+                <div>
+                    <div>Mẫu hoa đa dạng</div>
+                    <div style="font-weight: 800;">Hàng trăm mẫu hoa theo yêu</div>
+                </div>
             </div>
-            <div class="item">
-                <div>Giao hoa theo yêu cầu</div>
-                <div style="font-weight: 800;">Giao hẹn giờ, mặc đồng phục...</div>
+            <div class="item my-align-center">
+                <i class="fas fa-calendar-alt mr-2" style="font-size: 2.5em;"></i>
+                <div>
+                    <div>Giao hoa theo yêu cầu</div>
+                    <div style="font-weight: 800;">Giao hẹn giờ, mặc đồng phục...</div>
+                </div>
             </div>
         </div>
         <div class="footer my-container justify-content-between">
@@ -241,21 +300,59 @@
                 <div class="content">Đăng nhập</div>
                 <div class="content">Đăng ký</div>
                 <div class="content">Hướng dẫn thanh toán</div>
-
                 <div style="margin-top: 1em;"></div>
-
                 <div class="title">Tài khoản</div>
                 <div class="content">Facebook</div>
                 <div class="content">Google</div>
             </div>
-            <img src="../../image/vat.png" style="width: 20em;height: 4em;" alt="">
+            <img src="../../image/footerimg.png" style="width: 20em;height: 4em;" alt="">
         </div>
     </footer>
-
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        const remove = () => {
+            var listItem = document.getElementsByClassName('item-table')
+            console.log('listItem: ', listItem);
+            listItem[0].remove()
+        }
+        const plus = document.getElementsByClassName('plus-button')
+        for (let index = 0; index < plus.length; index++) {
+            const element = plus[index];
+            element.addEventListener('click', (e) => {
+                let currentValue = e.target.previousElementSibling.innerHTML
+                e.target.previousElementSibling.innerHTML = +currentValue + 1
+            }, false)
+        }
+        const minus = document.getElementsByClassName('minus-button')
+        for (let index = 0; index < minus.length; index++) {
+            const element = minus[index];
+            element.addEventListener('click', (e) => {
+                let currentValue = e.target.nextElementSibling.innerHTML
+                if (+currentValue - 1 >= 0) {
+                    e.target.nextElementSibling.innerHTML = +currentValue - 1
+                }
+            }, false)
+        }
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
